@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
   const navigate = useNavigate()
-  const [roomCode, setRoomCode] = useState('avalon-friday')
+  const [roomCode, setRoomCode] = useState('Avalon-Saturday')
 
   function goRoom() {
     const code = roomCode.trim().toLowerCase()
@@ -26,7 +26,7 @@ export default function Home() {
         <input
           value={roomCode}
           onChange={(e) => setRoomCode(e.target.value)}
-          placeholder="例如 avalon-friday"
+          placeholder="例如 Avalon-Saturday"
         />
         <button className="btn primary full mt16" onClick={goRoom}>
           进入房间
